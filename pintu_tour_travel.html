@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintu Tour & Travel | 24/7 Taxi Service in Greater Noida</title>
+    <meta name="description" content="Pintu Tour & Travel offers reliable and affordable 24/7 taxi services in Greater Noida, including airport transfers, local city rides, and outstation cabs. Call 097589 65397.">
+    <meta name="keywords" content="taxi service greater noida, airport taxi greater noida, cab service, 24/7 taxi, local cab, pintu tour and travel">
+    <meta name="author" content="Pintu Tour & Travel">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Pintu Tour & Travel | Taxi Service in Greater Noida">
+    <meta property="og:description" content="Reliable & Affordable 24/7 Taxi Services. Airport transfers, local rides, and more.">
+    <meta property="og:type" content="website">
+    
+    <!-- JSON-LD Structured Data for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Pintu Tour & Travel",
+      "description": "Reliable and affordable 24/7 taxi services in Greater Noida.",
+      "telephone": "+919758965397",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "B-110, Gulmohar Estate, Eta I, Rasoolpur Rai",
+        "addressLocality": "Greater Noida",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "201310",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.4744,
+        "longitude": 77.5040
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        taxi: {
+                            blue: '#0f172a', // slate-900 (Deep Navy)
+                            lightBlue: '#1e293b', // slate-800
+                            yellow: '#facc15', // yellow-400 (Taxi Yellow)
+                            yellowHover: '#eab308' // yellow-500
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        /* Pattern Background for Sections */
+        .pattern-bg {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230f172a' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+</head>
+<body class="text-slate-700 antialiased bg-white selection:bg-taxi-yellow selection:text-taxi-blue">
+
+    <header id="header" class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center gap-2 group">
+                        <div class="w-10 h-10 bg-taxi-yellow rounded-lg flex items-center justify-center text-taxi-blue group-hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-taxi text-xl"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-xl leading-tight text-taxi-blue tracking-tight">Pintu Tour & Travel</span>
+                            <span class="text-xs text-slate-500 font-medium uppercase tracking-wider">Greater Noida</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-slate-600 hover:text-taxi-blue font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-slate-600 hover:text-taxi-blue font-medium transition-colors">About</a>
+                    <a href="#services" class="text-slate-600 hover:text-taxi-blue font-medium transition-colors">Services</a>
+                    <a href="#testimonials" class="text-slate-600 hover:text-taxi-blue font-medium transition-colors">Reviews</a>
+                    <a href="#contact" class="text-slate-600 hover:text-taxi-blue font-medium transition-colors">Contact</a>
+                    <a href="tel:09758965397" class="bg-taxi-blue text-white px-5 py-2.5 rounded-full font-medium flex items-center gap-2 hover:bg-slate-800 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5">
+                        <i class="fa-solid fa-phone text-taxi-yellow"></i> 097589 65397
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-slate-600 hover:text-taxi-blue focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#home" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-taxi-blue hover:bg-slate-50 rounded-md">Home</a>
+                <a href="#about" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-taxi-blue hover:bg-slate-50 rounded-md">About</a>
+                <a href="#services" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-taxi-blue hover:bg-slate-50 rounded-md">Services</a>
+                <a href="#testimonials" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-taxi-blue hover:bg-slate-50 rounded-md">Reviews</a>
+                <a href="#contact" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-taxi-blue hover:bg-slate-50 rounded-md">Contact</a>
+                <a href="tel:09758965397" class="block mt-4 text-center bg-taxi-blue text-white px-5 py-3 rounded-lg font-medium shadow-md">
+                    <i class="fa-solid fa-phone mr-2 text-taxi-yellow"></i> Call 097589 65397
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden">
+        
+        <!-- Background Slider -->
+        <div id="hero-slider" class="absolute inset-0 z-0">
+            <!-- Slide 1: City Taxi -->
+            <div class="slide absolute inset-0 bg-cover bg-center bg-fixed transition-opacity duration-1000 ease-in-out opacity-100" style="background-image: url('https://images.unsplash.com/photo-1549315993-9c8446261054?q=80&w=2070&auto=format&fit=crop');"></div>
+            <!-- Slide 2: Airport Transfer -->
+            <div class="slide absolute inset-0 bg-cover bg-center bg-fixed transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop');"></div>
+            <!-- Slide 3: 24/7 Night Travel -->
+            <div class="slide absolute inset-0 bg-cover bg-center bg-fixed transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?q=80&w=1974&auto=format&fit=crop');"></div>
+        </div>
+
+        <!-- Dark Gradient Overlay for text readability -->
+        <div class="absolute inset-0 bg-slate-900/85 z-0"></div>
+
+        <!-- Decorative shapes -->
+        <div class="absolute top-1/4 left-10 w-20 h-20 bg-taxi-yellow/20 rounded-full blur-2xl z-0"></div>
+        <div class="absolute bottom-1/4 right-10 w-32 h-32 bg-taxi-yellow/10 rounded-full blur-3xl z-0"></div>
+
+        <!-- Slider Controls -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
+            <button class="slider-dot w-3 h-3 rounded-full bg-taxi-yellow transition-all duration-300 shadow-[0_0_8px_rgba(250,204,21,0.8)]" onclick="goToSlide(0)" aria-label="Go to slide 1"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" onclick="goToSlide(1)" aria-label="Go to slide 2"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300" onclick="goToSlide(2)" aria-label="Go to slide 3"></button>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="text-left max-w-2xl" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 backdrop-blur-sm border border-slate-700 mb-6">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        <span class="text-sm font-medium text-slate-200">Available 24/7 in Greater Noida</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                        Your Trusted <br>
+                        <span class="text-taxi-yellow">Taxi Service</span> in <br>
+                        Greater Noida
+                    </h1>
+                    <p class="text-lg text-slate-300 mb-8 max-w-xl font-light">
+                        Reliable, affordable, and safe transportation for local city rides, airport transfers, and outstation trips. Professional drivers at your service.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:09758965397" class="bg-taxi-yellow text-taxi-blue px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-taxi-yellowHover transition-all shadow-lg hover:shadow-taxi-yellow/20 hover:-translate-y-1">
+                            <i class="fa-solid fa-phone-volume"></i> Book Now
+                        </a>
+                        <a href="#services" class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-3 hover:bg-white/20 transition-all hover:-translate-y-1">
+                            Our Services <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-10 flex items-center gap-6 text-sm text-slate-400">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-taxi-yellow"></i> Clean Cars
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-taxi-yellow"></i> Verified Drivers
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-taxi-yellow"></i> On-time Pickup
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image/Graphic -->
+                <div class="hidden lg:flex justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="relative w-full max-w-md animate-float">
+                        <!-- Abstract representation of booking/car -->
+                        <div class="bg-white p-6 rounded-2xl shadow-2xl relative z-10 border border-slate-100">
+                            <div class="flex justify-between items-center mb-6 border-b pb-4">
+                                <div>
+                                    <h3 class="font-bold text-taxi-blue text-lg">Quick Estimate</h3>
+                                    <p class="text-xs text-slate-500">Greater Noida & NCR</p>
+                                </div>
+                                <div class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-taxi-blue">
+                                    <i class="fa-solid fa-car-side"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-4 bg-slate-50 p-3 rounded-lg">
+                                    <i class="fa-solid fa-location-dot text-taxi-yellow text-xl"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-500 font-medium">Pickup</p>
+                                        <p class="text-sm font-semibold text-slate-700">Greater Noida</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 bg-slate-50 p-3 rounded-lg">
+                                    <i class="fa-solid fa-plane-departure text-taxi-blue text-xl"></i>
+                                    <div>
+                                        <p class="text-xs text-slate-500 font-medium">Drop-off</p>
+                                        <p class="text-sm font-semibold text-slate-700">Delhi IGI Airport</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="tel:09758965397" class="mt-6 w-full bg-taxi-blue text-white py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-slate-800 transition-colors">
+                                Call for Best Price <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                        
+                        <!-- Decorative background element -->
+                        <div class="absolute -top-6 -right-6 w-full h-full bg-taxi-yellow rounded-2xl -z-10 opacity-50 blur-lg"></div>
+                        <div class="absolute -bottom-6 -left-6 w-full h-full bg-blue-500 rounded-2xl -z-10 opacity-20 blur-xl"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- About Image -->
+                <div class="relative" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop" alt="Taxi Service Driver" class="rounded-2xl shadow-xl object-cover h-[500px] w-full">
+                    <div class="absolute -bottom-8 -right-8 bg-taxi-yellow text-taxi-blue p-8 rounded-2xl shadow-xl hidden md:block">
+                        <div class="text-4xl font-black mb-1">10+</div>
+                        <div class="font-medium">Years of<br>Experience</div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div data-aos="fade-left">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-taxi-blue font-semibold text-sm mb-4">
+                        ABOUT US
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-taxi-blue mb-6">Your Reliable Travel Partner in Greater Noida</h2>
+                    
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Welcome to <strong class="text-slate-800">Pintu Tour & Travel</strong>, Greater Noida's premier taxi and transportation service. We understand that whether you're heading to a business meeting, catching a flight, or exploring the city, a reliable ride is essential.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        With a modern fleet of well-maintained vehicles and a team of professional, courteous drivers, we guarantee safe, comfortable, and timely transportation 24 hours a day, 7 days a week. We pride ourselves on transparent pricing and exceptional customer service.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full bg-yellow-50 flex items-center justify-center flex-shrink-0 text-taxi-yellow">
+                                <i class="fa-solid fa-map-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-1">Local & Outstation</h4>
+                                <p class="text-sm text-slate-500">Serving Greater Noida, Delhi NCR & beyond.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0 text-taxi-blue">
+                                <i class="fa-solid fa-wallet text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-1">Affordable Rates</h4>
+                                <p class="text-sm text-slate-500">Competitive pricing with no hidden charges.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="inline-flex items-center gap-2 font-semibold text-taxi-blue hover:text-taxi-yellowHover transition-colors group">
+                        Contact Us Today 
+                        <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 pattern-bg border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-taxi-blue font-semibold text-sm mb-4">
+                    OUR SERVICES
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-taxi-blue mb-4">Comprehensive Transportation Solutions</h2>
+                <p class="text-slate-600">We offer a wide range of travel services to meet all your transportation needs across Greater Noida and Delhi NCR.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 rounded-xl bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-taxi-yellow transition-colors duration-300">
+                        <i class="fa-solid fa-city text-2xl text-taxi-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Local City Rides</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Comfortable and quick point-to-point drop services within Greater Noida and Noida. Perfect for daily commutes or errands.
+                    </p>
+                    <a href="tel:09758965397" class="text-sm font-semibold text-taxi-blue hover:text-taxi-yellowHover transition-colors flex items-center gap-1">
+                        Book Ride <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 rounded-xl bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-taxi-yellow transition-colors duration-300">
+                        <i class="fa-solid fa-plane text-2xl text-taxi-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Airport Transfers</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Punctual pickup and drop-off services to and from Delhi IGI Airport. We track your flight to ensure we are there on time.
+                    </p>
+                    <a href="tel:09758965397" class="text-sm font-semibold text-taxi-blue hover:text-taxi-yellowHover transition-colors flex items-center gap-1">
+                        Book Airport Taxi <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 rounded-xl bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-taxi-yellow transition-colors duration-300">
+                        <i class="fa-solid fa-route text-2xl text-taxi-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Outstation Cabs</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Planning a weekend getaway or inter-city travel? Book our reliable outstation cabs for a safe and comfortable long journey.
+                    </p>
+                    <a href="tel:09758965397" class="text-sm font-semibold text-taxi-blue hover:text-taxi-yellowHover transition-colors flex items-center gap-1">
+                        Get Estimate <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 rounded-xl bg-slate-50 flex items-center justify-center mb-6 group-hover:bg-taxi-yellow transition-colors duration-300">
+                        <i class="fa-solid fa-clock text-2xl text-taxi-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">24/7 Availability</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Late-night train? Early morning flight? Emergency travel? Our cabs and drivers are available 24 hours a day, 365 days a year.
+                    </p>
+                    <a href="tel:09758965397" class="text-sm font-semibold text-taxi-blue hover:text-taxi-yellowHover transition-colors flex items-center gap-1">
+                        Call Now <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-taxi-blue text-white overflow-hidden relative">
+        <!-- Background accents -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-slate-800 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-taxi-yellow/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Why Choose Pintu Tour & Travel?</h2>
+                    <p class="text-slate-300 mb-10 text-lg">We don't just provide a ride; we provide an experience. Here is why hundreds of customers in Greater Noida trust us for their daily commutes and long journeys.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-full bg-taxi-yellow text-taxi-blue flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Safe & Secure</h4>
+                                <p class="text-slate-400">All our vehicles are regularly inspected, and our drivers are thoroughly verified to ensure your complete safety during transit.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-full bg-taxi-yellow text-taxi-blue flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Affordable Pricing</h4>
+                                <p class="text-slate-400">We offer highly competitive rates for local and outstation travels with zero hidden charges. You pay what is agreed.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-full bg-taxi-yellow text-taxi-blue flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2">Professional Drivers</h4>
+                                <p class="text-slate-400">Our drivers are experienced, punctual, well-mannered, and have excellent knowledge of Greater Noida and Delhi NCR routes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative" data-aos="fade-left">
+                    <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 shadow-2xl relative z-10">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-white">Book Your Ride Instantly</h3>
+                        <form id="quick-book-form" class="space-y-4" onsubmit="event.preventDefault();">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Your Name</label>
+                                <input type="text" placeholder="Enter your name" class="w-full bg-slate-700 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-taxi-yellow focus:border-transparent transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Phone Number</label>
+                                <input type="tel" placeholder="+91" class="w-full bg-slate-700 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-taxi-yellow focus:border-transparent transition-all">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-300 mb-1">Pickup Area</label>
+                                    <input type="text" placeholder="e.g. Pari Chowk" class="w-full bg-slate-700 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-taxi-yellow focus:border-transparent transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-300 mb-1">Drop Area</label>
+                                    <input type="text" placeholder="e.g. Airport" class="w-full bg-slate-700 border border-slate-600 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-taxi-yellow focus:border-transparent transition-all">
+                                </div>
+                            </div>
+                            <button type="button" onclick="alert('Thank you! This is a demo form. Please use the Call or WhatsApp button to book.')" class="w-full bg-taxi-yellow text-taxi-blue font-bold text-lg py-4 rounded-xl mt-4 hover:bg-taxi-yellowHover transition-colors shadow-lg shadow-taxi-yellow/20">
+                                Send Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-taxi-blue font-semibold text-sm mb-4">
+                    CUSTOMER REVIEWS
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-taxi-blue mb-4">What Our Clients Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex text-taxi-yellow mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6 leading-relaxed">"Excellent service! I booked a cab for a late-night airport drop from Greater Noida. The driver arrived 10 minutes early, the car was spotless, and the driving was very safe. Highly recommend Pintu Tour & Travel."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-500">
+                            RK
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">Rahul Kumar</h4>
+                            <p class="text-xs text-slate-500">Local Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex text-taxi-yellow mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6 leading-relaxed">"Very affordable compared to app-based cabs, and much more reliable. I use their services regularly for my business meetings across Delhi NCR. The drivers are very professional and courteous."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-500">
+                            AS
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">Amit Sharma</h4>
+                            <p class="text-xs text-slate-500">Business Professional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex text-taxi-yellow mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6 leading-relaxed">"Booked an outstation cab to Agra. The pricing was transparent, no hidden tolls or charges. The AC was working perfectly which is a must in summer. Great overall experience with Pintu Taxi Services."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-500">
+                            NV
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">Neha Verma</h4>
+                            <p class="text-xs text-slate-500">Tourist</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 pattern-bg border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-taxi-blue mb-4">Get in Touch</h2>
+                <p class="text-slate-600">Need a ride right now or want to pre-book for later? Contact us 24/7.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-1 space-y-6" data-aos="fade-right">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-50 text-taxi-blue rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 mb-1">Call Us 24/7</h4>
+                            <a href="tel:09758965397" class="text-lg font-semibold text-taxi-blue hover:text-taxi-yellow transition-colors block">097589 65397</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 mb-1">WhatsApp</h4>
+                            <a href="https://wa.me/919758965397" target="_blank" class="text-slate-600 hover:text-green-600 transition-colors block">Message us for quick booking</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-yellow-50 text-taxi-yellow rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 mb-1">Office Address</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                B-110, Gulmohar Estate,<br>
+                                Eta I, Rasoolpur Rai,<br>
+                                Greater Noida, UP 201310
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
+                        <div class="w-12 h-12 bg-slate-50 text-slate-600 rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 mb-1">Business Hours</h4>
+                            <p class="text-slate-600 text-sm">Open 24 Hours / 7 Days a Week</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="lg:col-span-2 h-[400px] lg:h-auto rounded-2xl overflow-hidden shadow-md border border-slate-200" data-aos="fade-left">
+                    <iframe 
+                        src="https://maps.google.com/maps?cid=2950544046296915664&hl=en&q=Pintu+Tour+%26+Travel&t=&z=14&ie=UTF8&iwloc=B&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-taxi-blue text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 border-b border-slate-800 pb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-taxi-yellow rounded flex items-center justify-center text-taxi-blue">
+                            <i class="fa-solid fa-taxi"></i>
+                        </div>
+                        <span class="font-bold text-xl text-white">Pintu Tour & Travel</span>
+                    </a>
+                    <p class="text-sm max-w-sm mb-4">
+                        Your most trusted, reliable, and affordable 24/7 taxi service provider in Greater Noida and Delhi NCR region. We ensure safe and comfortable journeys.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-taxi-yellow transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-taxi-yellow transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-taxi-yellow transition-colors">Our Services</a></li>
+                        <li><a href="#contact" class="hover:text-taxi-yellow transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Service Areas</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Greater Noida</li>
+                        <li>Noida</li>
+                        <li>Delhi NCR</li>
+                        <li>IGI Airport (T1, T2, T3)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+                <p>&copy; <span id="year"></span> Pintu Tour & Travel. All rights reserved.</p>
+                <p>Designed for better mobility.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a href="https://wa.me/919758965397" target="_blank" class="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-600 hover:scale-110 transition-all cursor-pointer" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:09758965397" class="w-14 h-14 bg-taxi-yellow text-taxi-blue rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-taxi-yellowHover hover:scale-110 transition-all md:hidden cursor-pointer" aria-label="Call Now">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+            easing: 'ease-in-out-cubic',
+        });
+
+        // Set Current Year in Footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = mobileMenuButton.querySelector('i');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Sticky Header effect on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md', 'py-0');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.remove('shadow-md', 'py-0');
+                header.classList.add('shadow-sm');
+            }
+        });
+
+        // Hero Background Slider Logic
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function goToSlide(index) {
+            // Reset opacities and dot styles
+            slides.forEach(slide => {
+                slide.classList.remove('opacity-100');
+                slide.classList.add('opacity-0');
+            });
+            dots.forEach(dot => {
+                dot.classList.remove('bg-taxi-yellow', 'shadow-[0_0_8px_rgba(250,204,21,0.8)]');
+                dot.classList.add('bg-white/40');
+            });
+
+            // Set active slide and dot
+            slides[index].classList.remove('opacity-0');
+            slides[index].classList.add('opacity-100');
+            dots[index].classList.remove('bg-white/40');
+            dots[index].classList.add('bg-taxi-yellow', 'shadow-[0_0_8px_rgba(250,204,21,0.8)]');
+            
+            currentSlide = index;
+            resetInterval();
+        }
+
+        function nextSlide() {
+            let next = (currentSlide + 1) % slides.length;
+            goToSlide(next);
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        }
+
+        // Initialize slider interval on load
+        resetInterval();
+    </script>
+</body>
+</html>
